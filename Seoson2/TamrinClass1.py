@@ -6,7 +6,8 @@ class Person:
         Person.count+=1
     def __str__(self):
         return self.__name+"\t\t"+self.__family  
-
+    def __del__(self):
+        print(self.__name+"\tthe end.....")
 
 person1=Person("alireza","jahangard")
 print(str(person1))
